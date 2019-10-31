@@ -60,7 +60,7 @@ object, pass context to the constructor.
 val adaView = AdaEmbedView(getContext())
 ```
 After this, the view will be created, but will not be initialized. Call 
-`initialize(settings: AdaEmbedView.Settings)`, to do this, and 
+`initialize(settings: AdaEmbedView.Settings)` to do this and 
 pass settings object as an argument.
 
 ```kotlin
