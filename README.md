@@ -35,13 +35,13 @@ In sdk there is an opportunity to initialize the view in the xml markup:
 To display the view, the `ada_handle` parameter is required. If you specify 
 it as an attribute, the chat will be displayed immediately upon 
 attachment to the parent view. If it is not specified, then you 
-can do it later programmatically using the method 
+can do it later programmatically using the method: 
 `initialize(settings: AdaEmbedView.Settings)`
 
 ```kotlin
 val adaView = findViewById(R.id.ada_chat_frame)
 
-adaSettings = AdaEmbedView.Settings.Builder(handle = "ada-example")
+adaSettings = AdaEmbedView.Settings.Builder("ada-example")
     .build()
 adaView.initialize(adaSettings)
 container.addView(adaView)
@@ -59,25 +59,21 @@ object, pass context to the constructor.
 ```kotlin
 val adaView = AdaEmbedView(getContext())
 ```
-After this, the view will be created, but will not be initialized.To do 
-this, call the method `initialize(settings: AdaEmbedView.Settings)` and 
+After this, the view will be created, but will not be initialized. Call 
+`initialize(settings: AdaEmbedView.Settings)`, to do this, and 
 pass settings object as an argument.
 
 ```kotlin
-val adaSettings = AdaEmbedView.Settings.Builder(handle = "ada-example")
+val adaSettings = AdaEmbedView.Settings.Builder("ada-example")
     .cluster("ca")
     .language("en")
     .build()
 adaView.initialize(adaSettings)
 ```
 
-To display chat frame on the screen, it remains only to add the 
+To display a chat frame on the screen, it remains only to add the 
 previously created view to the container using the Android SDK.
 
-```kotlin
-val container: ViewGroup = findViewById(R.id.container)
-container.addView(adaView)
-```
 #### Modal Screen 
 TBD
 
@@ -179,13 +175,13 @@ Selector | Description
 app:ada_styles="*{font-size: 14px !important;}"
 ```
 
-#### Set Configuration Programmatically
+#### Builder Configuration
 
 You can also configure the Ada bot programmatically using the
 `AdaEmbedView.Settings` class.
 
 ```kotlin
-val adaSettings = AdaEmbedView.Settings.Builder(handle = "ada-example")
+val adaSettings = AdaEmbedView.Settings.Builder("ada-example")
             .cluster("ca")
             .greetings("5c59aaabd8269e0339979014")
             .styles("*{font-size: 14px !important;}")
