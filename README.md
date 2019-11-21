@@ -19,7 +19,7 @@ Android app into which you plan to integrate the Ada Android SDK.
 ## Installation
 [ ![Download](https://api.bintray.com/packages/demeetest/testrepo/android-sdk/images/download.svg?version=0.1.1) ](https://bintray.com/demeetest/testrepo/android-sdk/0.1.1/link)
 
-https://bintray.com/beta/#/demeetest/testrepo/android-sdk?tab=overview
+https://bintray.com/beta/#/demeetest/testrepo/android-sdk/0.1.2/link
 
 
 ## Chat Frame Creation 
