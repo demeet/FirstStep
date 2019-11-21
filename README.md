@@ -17,7 +17,7 @@ working knowledge of Android development. It also assumes you have a native
 Android app into which you plan to integrate the Ada Android SDK.
 
 ## Installation
-TBD
+[ ![Download](https://api.bintray.com/packages/demeetest/testrepo/android-sdk/images/download.svg?version=0.1.1) ](https://bintray.com/demeetest/testrepo/android-sdk/0.1.1/link)
 
 
 ## Chat Frame Creation 
